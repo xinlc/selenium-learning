@@ -4,11 +4,13 @@
 from selenium import webdriver
 from time import sleep
 import os
+
+
 class TestCase(object):
     def __init__(self):
         self.driver = webdriver.Chrome()
         path = os.path.dirname(os.path.abspath(__file__))
-        file_path = 'file:///'+path +'/forms2.html'
+        file_path = 'file:///' + path + '/forms2.html'
         self.driver.get(file_path)
 
     def test_checkbox(self):

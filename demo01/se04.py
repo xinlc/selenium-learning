@@ -2,10 +2,8 @@
 掌握WebElement核心方法和属性的使用
 """
 
-
 from selenium import webdriver
 from time import sleep
-
 
 # http://sahitest.com/demo/
 from selenium.webdriver.remote.webelement import WebElement
@@ -41,6 +39,7 @@ class TestCase(object):
 
         sleep(2)
         e.clear()
+
     def test_method2(self):
         form_element = self.driver.find_element_by_xpath('/html/body/form[1]')
         form_element.find_element_by_id('t1').send_keys('bala')

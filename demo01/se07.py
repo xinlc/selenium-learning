@@ -1,4 +1,3 @@
-
 """
 下拉列表：熟练使用Select类，来实现下拉列表定位
 """
@@ -18,7 +17,7 @@ class TestCase(object):
 
     def test_select(self):
         se = self.driver.find_element_by_id('provise')
-        select= Select(se)
+        select = Select(se)
 
         # select.select_by_index(2)
         #

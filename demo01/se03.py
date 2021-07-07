@@ -11,9 +11,10 @@ class TestCase(object):
         self.driver = webdriver.Chrome()
         self.driver.get('http://www.baidu.com')
         self.driver.maximize_window()
+
     def test_prop(self):
-        print(self.driver.name)# 浏览器名称
-        print(self.driver.current_url) # url
+        print(self.driver.name)  # 浏览器名称
+        print(self.driver.current_url)  # url
         print(self.driver.title)
         print(self.driver.window_handles)
         print(self.driver.page_source)
@@ -29,8 +30,8 @@ class TestCase(object):
         sleep(2)
         self.driver.forward()
 
-        self.driver.close() # 只关闭当前tab
-        self.driver.quit() # 关闭浏览器
+        self.driver.close()  # 只关闭当前tab
+        self.driver.quit()  # 关闭浏览器
 
     def test_windows(self):
         self.driver.find_element_by_link_text('新闻').click()
@@ -40,7 +41,6 @@ class TestCase(object):
             for w in windows:
                 self.driver.switch_to.window(w)
                 sleep(2)
-
 
 
 if __name__ == '__main__':

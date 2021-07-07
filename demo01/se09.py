@@ -33,13 +33,14 @@ class TestCase(object):
 
     # 动态显示等待，等待到能拿到指定数据就结束等待，最常用
     def test_wait(self):
-        wait = WebDriverWait(self.driver,2)
+        wait = WebDriverWait(self.driver, 2)
         wait.until(EC.title_is('百度一下，你就知道'))
         self.driver.find_element_by_id('kw').send_keys('selenium')
         # sleep(2) # 线程阻塞 blocking wait
         self.driver.find_element_by_id('su').click()
         # sleep(3)
         self.driver.quit()
+
 
 if __name__ == '__main__':
     case = TestCase()

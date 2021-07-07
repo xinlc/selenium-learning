@@ -20,7 +20,6 @@ class TestCase(object):
     def __init__(self):
         self.driver = webdriver.Chrome()
 
-
     def test(self):
         self.driver.get('http://www.baidu.com')
         sleep(1)

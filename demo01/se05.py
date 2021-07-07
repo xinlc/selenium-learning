@@ -22,7 +22,6 @@ class TestCase(object):
         print(username.get_attribute('value'))
         print(pwd.get_attribute('value'))
 
-
         self.driver.find_element_by_id('submit').click()
         self.driver.switch_to.alert.accept()
         sleep(2)

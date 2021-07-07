@@ -5,6 +5,8 @@
 from selenium import webdriver
 from time import sleep
 import os
+
+
 class TestCase(object):
     def __init__(self):
         self.driver = webdriver.Chrome()
@@ -19,6 +21,7 @@ class TestCase(object):
         print(alert.text)
         sleep(3)
         alert.accept()
+
     def test_confirm(self):
         self.driver.find_element_by_id('confirm').click()
         confirm = self.driver.switch_to.alert

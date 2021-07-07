@@ -14,6 +14,7 @@ class TestCase(object):
         self.driver.get('http://www.baidu.com')
         self.driver.maximize_window()
         sleep(1)
+
     def test_id(self):
         # id是唯一的
         element = self.driver.find_element_by_id('kw')
@@ -31,13 +32,13 @@ class TestCase(object):
         self.driver.find_element_by_id('su').click()
         sleep(3)
         self.driver.quit()
+
     def test_linktext(self):
         self.test_id()
         self.driver.find_element_by_link_text('百度首页').click()
         sleep(3)
 
     def test_partial_link_text(self):
-
         self.test_id()
         self.driver.find_element_by_partial_link_text('首页').click()
         sleep(3)
@@ -63,14 +64,10 @@ class TestCase(object):
         self.driver.quit()
 
     def test_all(self):
-        self.driver.find_element(By.ID,value='kw').send_keys('selenium')
+        self.driver.find_element(By.ID, value='kw').send_keys('selenium')
         self.driver.find_element_by_id('su').click()
         sleep(3)
         self.driver.quit()
-
-
-
-
 
 
 if __name__ == '__main__':
