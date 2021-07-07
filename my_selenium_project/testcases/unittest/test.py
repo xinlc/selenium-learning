@@ -3,7 +3,7 @@
 """
 
 import unittest
-from lib.HTMLTestRunner import HTMLTestRunner
+from libs.HTMLTestRunner import HTMLTestRunner
 import os
 
 

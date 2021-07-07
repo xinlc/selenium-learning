@@ -2,7 +2,7 @@ import pickle
 import random
 import string
 import time
-from lib.ShowapiRequest import ShowapiRequest
+from libs.ShowapiRequest import ShowapiRequest
 
 from PIL import Image
 import os

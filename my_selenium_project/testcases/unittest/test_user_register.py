@@ -3,7 +3,7 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from lib.HTMLTestRunner import HTMLTestRunner
+from libs.HTMLTestRunner import HTMLTestRunner
 from util import util
 
 import unittest
